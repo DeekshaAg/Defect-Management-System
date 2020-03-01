@@ -13,3 +13,5 @@
 #1. The application.properties file is being used by the config server
 #2. The .properties files for each microservice is being accessed through the config server.
 #3. The DiscoveryServer.properties file is for the DiscoveryServer.
+
+# The database related details are provided in tables.txt
