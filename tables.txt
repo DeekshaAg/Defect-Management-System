@@ -1,0 +1,19 @@
+1. Create a database defecttracker_defect for DefectDetailsMS
+mysql> create database defecttracker_defect
+
+2. change the current database to defecttracker_defect
+mysql> use defecttracker_defect
+
+3. create a table named defect:
+mysql> create table defect (defectid smallint(6) auto_increment, category varchar(100) not null, chgstatus varchar(50) not null, description varchar(150),
+priority smallint(6) not null, status varchar(20) not null, username varchar(20), constraint pk_defect primary key(defectid));
+
+4. Create another database defecttacker_user for UserInformationMS
+mysql> create database defecttracker_user
+
+5. change the current database to defecttracker_user
+mysql> use defecttracker_user
+
+6. create a table named user
+mysql> create table user (userid smallint(6) autoincrement, username varchar(30) not null unique, password varcahr(20) not null, role varchar(10) not null,
+constraint pk_user primary_key(userid));
